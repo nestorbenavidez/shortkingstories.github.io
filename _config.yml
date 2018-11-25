@@ -7,7 +7,7 @@ compass:
   # an avatar or logo (optional)
   logo: "/images/compass.jpeg"
   # author will appear under the avatar (optional)
-  author: "Nestor"
+  author: "Nestor Benavidez"
   # tagline will appear under the title (optional)
   tagline: "software engineering"
   # if include_content is true, the contents of the content.html include will be
