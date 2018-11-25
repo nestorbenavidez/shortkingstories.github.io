@@ -1,38 +1,27 @@
 ---
-layout: default
+layout: base
 ---
+<div class="wrapper">
+    <header>
+        {% if site.compass.logo %}
+        <div class="logo-container">
+          <a class="logo" href="{{ page.baseurl }}" style="background-image: url('{{ site.baseurl }}{{ site.compass.logo }}')"></a>
+        </div>
+        {% endif %}
 
-<section class="intro">
-  <div class="container">
-    <header class="welcome-header">
-      <p>{{  site.description  }}</p>
+        {% if site.compass.author %}
+        <div class="author-container"><h1>{{ site.compass.author }}</h1></div>
+        {% endif %}
+
+        {% if site.compass.tagline %}
+        <div class="tagline-container"><p>{{ site.compass.tagline }}</p></div>
+        {% endif %}
     </header>
-  </div>
-</section>
-
-<section class="post-list">
-  <div class="container">
-    <h1 class="page-heading">Posts</h1>
-    <ul>
-      {% for post in paginator.posts %}
-        <article class="post-item">
-
-          <span class="post-time">
-            <time>{{ post.date | date: '%B %d, %Y' }} <strong> - </strong></time>
-          </span>
-          <span class="post-name">
-              <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-              <strong> - </strong>
-          </span>
-          <p class="post-stub">{{ post.content | strip_html | truncatewords: 40 }}</p>
-          <a href="{{ post.url | prepend: site.baseurl}}"> Read More </a>
-        </article>
-        
-        <!-- hr -->
-      {% endfor %}
-    </ul>
-    <!-- p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p -->
-  </div>
-</section>
-
-{% include pagination.html %}
+    <main>
+      {% if site.compass.include_content %}
+      <div class="content">
+        {% include content.html %}
+      </div>
+      {% endif %}
+    </main>
+</div>

@@ -1,43 +1,21 @@
-# Chaplin
+# Documentation
 
-*Note:* Check out my new theme, [accent](https://github.com/bk2dcradle/accent)
+Compass is a Jekyll theme designed with something very specific in mind: to be a simple and elegant personal landing page that can be easily deployed to [GitHub Pages](https://pages.github.com/).
 
-### Installation
+## How to use Compass
 
-Installation is easy. Simply download the theme [here](http://github.com/bk2dcradle/Chaplin/archive/master.zip) and run `bundle exec jekyll serve` inside the directory.
+1. Start by [installing Bundler](http://bundler.io) `gem install bundler`
+2. [Fork the Compass repository](https://github.com/excentris/compass/fork)
+3. Clone the repository you just forked: `git clone https://github.com/YOUR-USER/compass`
+4. Then run `bundle install` to get [Jekyll](http://jekyllrb.com) and all the dependencies.
+5. Edit `_config.yml` as needed.
+6. Run the Jekyll server with `bundle exec jekyll serve`
+7. Go to `http://localhost:4000`
 
-However, before going live, set the following variables in `_config.yml`
+## Deploy your site to GitHub Pages
 
-1. `url` : This is the base url of your website. If you are hosting on GitHub, it should be set to `http://your-username.github.io` for example.
-2. `baseurl` : This is the subpath of your site. If you are hosting on GitHub, in a repository named `Blog`, then it should be set to `/blog`.
-3. `tracking_id` : Set this to your google analytics tracking id.
+If you want to use Compass as your personal landing page you can deploy your site to GitHub Pages as a [User Page](https://help.github.com/articles/user-organization-and-project-pages/#user--organization-pages). To do so, when you are done modifying your clone, you should rename your repository to `username.github.io` where username is your username. When GitHub builds the page it will be made available at `https://username.github.io`.
 
-Change other variables under *User Settings* in `_config.yml` as you see fit. 
+If you are planning on using a custom domain to direct to your site, modify the CNAME file as described [here](https://help.github.com/articles/adding-a-cname-file-to-your-repository/).
 
-*Note:* Don't change any variable under *Build Settings*.
-
----
-
-### Usage
-
-* To change the font for the heading, change the `$heading-font` variable in `_sass/_vars.scss`
-
-* To create a new post, simply save the `.markdown` file in the `_posts` directory in the format.
-
-```
-year-month-day-name-of-the-file.markdown
-```
-
-* For Syntax highlighting, Chaplin uses *Rouge* which is the default highlighter in Jekyll 3 and above. If you don't know how to highlight a code block, [refer](http://jekyllrb.com/docs/templates/).
-
-* To set up Google Analytics tracking id, just set the `tracking_id` variable in `_config.yml`. You also need to set `google_analytics` to `true`
-
-### Comments using Disqus
-
-To add Disqus comments on your blog, get the universal code from the Disqus website, and copy it in `_includes/disqus.html`.
-
----
-
-### License
-
-MIT. Copyright (c) [Ankit Sultana](http://twitter.com/AnkitSultana)
+Check the [GitHub Pages Basics](https://help.github.com/categories/github-pages-basics/) for more information.
