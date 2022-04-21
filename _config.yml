@@ -1,31 +1,26 @@
-# general configuration
-url: 'https://jolly-khorana-f3668b.netlify.app/'
-baseurl: ''
-
-# compass configuration
-compass:
-  # an avatar or logo (optional)
-  logo: "/images/compass.jpeg"
-  # author will appear under the avatar (optional)
-  author: "Nestor Benavidez"
-  # tagline will appear under the title (optional)
-  tagline: "software engineering"
-  # if include_content is true, the contents of the content.html include will be
-  # added right above the generated item list, if present
-  include_content: true
-  # if include_analytics is true, the content of the analytics.html include will
-  # be added at the end of the <head> section. You can add your Google Analytics
-  # Tracking Code to that file.
-  include_analytics: false
-  # Twitter @username (as defined by the Twitter Card specs)
-  twitter: "compass"
-
-# exclude
-exclude: ["CNAME", "Gemfile", "Gemfile.lock", "LICENSE", "README.md"]
-
 # Dependencies
-markdown: kramdown
-highlighter: rouge
+markdown:         redcarpet
+highlighter:      pygments
 
 # Permalinks
-permalink: pretty
+permalink:        pretty
+relative_permalinks: true
+
+# Setup
+title:            Hyde
+tagline:          'A Jekyll theme'
+description:      'A brazen two-column <a href="http://jekyllrb.com" target="_blank">Jekyll</a> theme that pairs a prominent sidebar with uncomplicated content. Made by <a href="https://twitter.com/mdo" target="_blank">@mdo</a>.'
+url:              http://hyde.getpoole.com
+baseurl:          /
+
+author:
+  name:           'Mark Otto'
+  url:            https://twitter.com/mdo
+
+paginate:         5
+
+# Custom vars
+version:          2.1.0
+
+github:
+  repo:           https://github.com/poole/hyde

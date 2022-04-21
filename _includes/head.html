@@ -1,43 +1,29 @@
 <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{% if site.compass.author %}{{ site.compass.author }} &#8226; {% endif %}{{ site.compass.tagline | strip_html }}</title>
 
-  <link rel="apple-touch-icon" href="{{ site.baseurl }}{{ site.compass.logo }}"/>
-  <link rel="shortcut icon" sizes="16x16 24x24 32x32 48x48 64x64" href="{{ site.url }}{{ site.baseurl }}/favicon.ico" />
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
 
-  <link rel="stylesheet" href="{{ site.baseurl }}/assets/normalize.css">
-  <link rel="stylesheet" href="{{ site.baseurl }}/assets/main.css">
-  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-  <link href='https://fonts.googleapis.com/css?family=Vollkorn' rel='stylesheet' type='text/css'>
+  <title>
+    {% if page.title == "Home" %}
+      {{ site.title }} &middot; {{ site.tagline }}
+    {% else %}
+      {{ page.title }} &middot; {{ site.title }}
+    {% endif %}
+  </title>
 
-  <link rel="canonical" href="{{ site.url }}{{ site.baseurl }}{{ page.url }}">
+  <!-- CSS -->
+  <link rel="stylesheet" href="{{ site.baseurl }}public/css/poole.css">
+  <link rel="stylesheet" href="{{ site.baseurl }}public/css/syntax.css">
+  <link rel="stylesheet" href="{{ site.baseurl }}public/css/hyde.css">
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface">
 
-  <meta name="author" content="{{ site.compass.author }}">
-  <meta name="description" content="{{ site.compass.tagline }}"/>
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{ site.baseurl }}public/apple-touch-icon-144-precomposed.png">
+                                 <link rel="shortcut icon" href="{{ site.baseurl }}public/favicon.ico">
 
-  <!-- Open Graph tags -->
-  <meta property="og:type" content="website"/>
-  <meta property="og:title" content="{{ site.compass.tagline }}"/>
-  <meta property="og:url" content="{{ site.url }}{{ site.baseurl }}{{ page.url }}"/>
-  <meta property="og:image" content="{{ site.url }}{{ site.baseurl }}{{ site.compass.logo }}"/>
-  <meta property="og:description" content="{{ site.compass.description }}"/>
-  <meta property="og:site_name" content="{{ site.compass.tagline }}">
-
-  <!-- Twitter Card tags -->
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="{{ site.compass.tagline }}">
-  {% if site.twitter.site %}
-  <meta name="twitter:site" content="{{ site.twitter.site }}">
-  {% endif %}
-  {% if site.twitter.creator %}
-  <meta name="twitter:creator" content="{{ site.twitter.creator }}">
-  {% endif %}
-  <meta name="twitter:url" content="{{ site.url }}{{ site.baseurl }}{{ page.url }}">
-  <meta name="twitter:description" content="{{ site.compass.description }}">
-  <meta name="twitter:image:src" content="{{ site.url }}{{ site.baseurl }}{{ site.compass.logo }}">
-
-  {% if site.compass.include_analytics %}
-  {% include analytics.html %}
-  {% endif %}
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
 </head>
