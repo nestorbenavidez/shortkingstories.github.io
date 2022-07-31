@@ -1,8 +1,8 @@
 # Site settings
-title:       The recursive badger
+title:       Cronicas recursivas
 email:       nestor.benavidez@gmail.com
 author:      Nestor Benavidez
-description: "A blog about technology, data science, financial engineering, movies and travel"
+description: "Blogging sobre tecnologia, ciencia de datos, ingenieria financiera, cine, arte, viajes .."
 baseurl:     ""
 url:         ""
 date_format: "%b %-d, %Y"
