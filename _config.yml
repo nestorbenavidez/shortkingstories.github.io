@@ -1,8 +1,8 @@
 # Site settings
-title:       Cronicas recursivas
+title:       Recursive chronicles in the hour of th owl
 email:       nestor.benavidez@gmail.com
 author:      Nestor Benavidez
-description: "Blogging sobre tecnologia, ciencia de datos, ingenieria financiera, cine, arte, viajes .."
+description: "Blogging about IT, Data Science, Financial Engineer, cinema, art, travel, books .."
 baseurl:     ""
 url:         ""
 date_format: "%b %-d, %Y"
@@ -20,7 +20,7 @@ google_tag_manager:
 bing_verification:
 
 # Optional features
-animated:             false
+animated:             true
 show_related_posts:   false
 show_post_footers:    false
 show_social_icons:    false
@@ -42,12 +42,12 @@ disqus_shortname:
 
 # Facebook Comments plugin
 # (leave blank to disable Facebook Comments, otherwise set it to true)
-facebook_comments:
+facebook_comments: true
 facebook_appid:
 facebook_comments_number: 10
 
 # Social icons
-github_username:
+github_username: nestorbenavidez
 reddit_username:
 bitbucket_username:
 stackoverflow_id:
@@ -99,7 +99,7 @@ text:
   index:
     coming_soon: 'Coming soon...'
   contact:
-    email:    'Email Address'
+    email:    'nestor.benavidez@gmail.com'
     content:  'What would you like to say?'
     subject:  'New submission!'
     submit:   'Say Hello'
