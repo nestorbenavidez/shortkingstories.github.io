@@ -9,7 +9,7 @@ Nestor Benavidez Tapia is a veteran software professional that has work in
 the industry for over 12 years with incredible companies like Accenture, Google, 
 Meltwater, Altimetrik among other amazing firms.
 
-Husband of the most amazing woman, father of 2 impressive and smart girls, in love with Portugal and its people. Lived in
+Father of 2 impressive and smart girls, in love with Portugal and its people. Lived in
 Nicaragua, USA, Uruguay, Ghana, South Africa, Turkey and Portugal. Visited 20+ countries and counting.
 
 What he's interested in:
